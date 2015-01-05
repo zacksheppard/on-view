@@ -68,21 +68,7 @@ div {
   }
 }
 
-.item-info {
-  font-size: 1.2em;
-  margin: 10px;
-}
-
-.signage {
-  padding: 6px;
-  border: 1px #a8a8a8 solid;
-  margin: 10px;
-  background-color: #fcfcfc;
-}
-
-.item-title {
-  font-weight: 500;
-}
+// Custom rules
 
 .artist-name {
   font-style: italic;
@@ -118,4 +104,20 @@ div {
     inset #CBB626 0px 0px 0px 18px, 
     inset #F5E6A7 0px 0px 0px 21px, 
     inset #4C4407 0px 0px 0px 23px;
+}
+
+.item-info {
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+.item-title {
+  font-weight: 500;
+}
+
+.signage {
+  background-color: #fcfcfc;
+  padding: 6px;
+  border: 1px #a8a8a8 solid;
+  margin: 10px;
 }
