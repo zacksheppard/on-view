@@ -68,9 +68,16 @@ div {
   }
 }
 
+.item-info {
+  font-size: 1.2em;
+  margin: 10px;
+}
+
 .signage {
-  border-width: 2px;
-  border-color: #000;
+  padding: 6px;
+  border: 1px #a8a8a8 solid;
+  margin: 10px;
+  background-color: #fcfcfc;
 }
 
 .item-title {
