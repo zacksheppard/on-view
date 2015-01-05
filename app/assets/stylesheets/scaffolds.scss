@@ -1,5 +1,5 @@
 body {
-  background-color: #FFFDF0;
+  background-color: #F8F6EB;
   color: #1C1C1C;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -68,6 +68,19 @@ div {
   }
 }
 
+.signage {
+  border-width: 2px;
+  border-color: #000;
+}
+
+.item-title {
+  font-weight: 500;
+}
+
+.artist-name {
+  font-style: italic;
+}
+
 .fancy-frame {
   padding: 22px;
   overflow-x: hidden; /* For Opera */
@@ -75,7 +88,7 @@ div {
     inset #958A45 0px 0px 2px 3px, 
     inset #CCBE5E 0px 0px 0px 1px, 
     inset #F9DE48 0px 0px 0px 10px, 
-    inset #FFF753 0px 0px 0px 11px, 
+    inset #FFF753 0px 0px 2px 11px, 
     inset #F8D84F 0px 0px 0px 16px, 
     inset #7F7215 0px 0px 0px 17px, 
     inset #F5E6A7 0px 0px 0px 21px, 
@@ -84,7 +97,7 @@ div {
     inset #958A45 0px 0px 2px 3px, 
     inset #CCBE5E 0px 0px 0px 1px, 
     inset #F9DE48 0px 0px 0px 10px, 
-    inset #FFF753 0px 0px 0px 11px, 
+    inset #FFF753 0px 0px 2px 11px, 
     inset #F8D84F 0px 0px 0px 16px, 
     inset #7F7215 0px 0px 0px 17px, 
     inset #F5E6A7 0px 0px 0px 21px, 
@@ -93,7 +106,7 @@ div {
     inset #958A45 0px 0px 2px 3px, 
     inset #CCBE5E 0px 0px 0px 1px, 
     inset #F9DE48 0px 0px 0px 10px, 
-    inset #FFF753 0px 0px 0px 11px, 
+    inset #FFF753 0px 0px 2px 11px, 
     inset #F8D84F 0px 0px 0px 16px, 
     inset #7F7215 0px 0px 0px 17px, 
     inset #F5E6A7 0px 0px 0px 21px, 

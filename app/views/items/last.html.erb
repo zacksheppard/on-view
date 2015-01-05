@@ -8,27 +8,19 @@
 
 <div class="row">
   <div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
-    <div class="text-center">
-      <%= @item.title %>
-    </div>
-    <div>
-      Artist: <%= @item.artist_name %>
+    <div class="signage">
+      <div class="item-title">
+        <%= @item.title %>
+      </div>
+      <div class="artist-name">
+        Artist: <%= @item.artist_name%>
+      </div>
     </div>
   </div>
 </div>
 
 
 <p class="text-center">
-  <%= @item.medium %>, <%= @item.object_date %>, 
+This site features one object per week from the <a href="http://www.brooklynmuseum.org">Brooklyn Museum</a>. This week's item is a <%= @item.medium %> and is dated <%= @item.object_date %>. It's dimensions are <%= @item.dimensions %> and it's credited to <%= @item.credit_line %>. (Accession number: <%= @item.accession_number %>)
+ 
 </p>
-
-<p class="text-center">
-  <strong>Dimensions:</strong>
-  <%= @item.dimensions %>
-</p>
-
-<p>
-  <strong>Credit line:</strong>
-  <%= @item.credit_line %>. Accession number: <%= @item.accession_number %>
-</p>
-
