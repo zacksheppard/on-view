@@ -24,5 +24,6 @@ task :fetch_item => :environment do
   i.accession_number = doc.css('object')[0]['accession_number']
 
   i.save
+  puts "The new item is #{i.title} - #{i.url}."
 
 end
