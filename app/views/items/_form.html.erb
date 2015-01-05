@@ -1,0 +1,53 @@
+<%= form_for(@item) do |f| %>
+  <% if @item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% @item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :artist_name %><br>
+    <%= f.text_field :artist_name %>
+  </div>
+  <div class="field">
+    <%= f.label :object_date %><br>
+    <%= f.text_field :object_date %>
+  </div>
+  <div class="field">
+    <%= f.label :medium %><br>
+    <%= f.text_field :medium %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_line %><br>
+    <%= f.text_field :credit_line %>
+  </div>
+  <div class="field">
+    <%= f.label :accession_number %><br>
+    <%= f.text_field :accession_number %>
+  </div>
+  <div class="field">
+    <%= f.label :label %><br>
+    <%= f.text_area :label %>
+  </div>
+  <div class="field">
+    <%= f.label :image_url %><br>
+    <%= f.text_field :image_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
