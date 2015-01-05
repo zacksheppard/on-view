@@ -22,8 +22,7 @@ task :fetch_item => :environment do
   i.dimensions = doc.css('object')[0]['dimensions']
   i.credit_line = doc.css('object')[0]['credit_line']
   i.accession_number = doc.css('object')[0]['accession_number']
-  binding.pry
 
-  # i.save
+  i.save
 
 end
