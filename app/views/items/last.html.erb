@@ -2,7 +2,7 @@
 
 <div class="row">
   <div class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
-    <%= image_tag(@item.image_url, class: 'fancy-frame') %>
+    <a href="<%= @item.url %>"><%= image_tag(@item.image_url, class: 'fancy-frame') %></a>
   </div>
 </div>
 
@@ -10,10 +10,10 @@
   <div class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
     <div class="text-center signage">
       <div class="item-title">
-        <%= @item.title %>
+        <a href="<%= @item.url %>"><%= @item.title %></a>
       </div>
       <div class="artist-name">
-        <%= @item.artist_name%>
+        <%= @item.artist_name %>
       </div>
     </div>
   </div>
@@ -21,7 +21,7 @@
 
 
 <div class="item-info text-center">
-On view this week is a <%= @item.medium %> dated <%= @item.object_date %>. It's dimensions are <%= @item.dimensions %>. Credit line: <%= @item.credit_line %>, Accession number: <%= @item.accession_number %>.
+On view this week is a <%= @item.medium %><%= " dated @item.object_date" if @item.object_date %>. It's dimensions are <%= @item.dimensions %>. <%= @item.credit_line %>, Accession number: <%= @item.accession_number %>.
 </div>
 <div class="text-center">
 This site features one object per week from the <a href="http://www.brooklynmuseum.org">Brooklyn Museum</a> <a href="http://www.brooklynmuseum.org/opencollection/api/"> API</a>. It is not direclty affiliated with the museum.
